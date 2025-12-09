@@ -1,0 +1,214 @@
+/* ---------------------- RESET NHẸ ---------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ---------------------- BREADCRUMB ---------------------- */
+.bcrumbs ul {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.bcrumbs ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.bcrumbs ul li {
+    color: #000;
+}
+
+/* ---------------------- LAYOUT TỔNG ---------------------- */
+.see-product {
+    padding: 30px 0;
+    background: #fff;
+}
+
+.left .slider {
+    position: relative;
+}
+
+.img-slider .item-img img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* ---------------------- SLIDER BUTTON ---------------------- */
+.slider .back,
+.slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.slider .back { left: 10px; }
+.slider .next { right: 10px; }
+
+/* Thumbnail */
+.owl-item-synced {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.owl-item-synced .item img {
+    width: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.owl-item-synced .item:hover img {
+    border-color: #d70018;
+}
+
+/* ---------------------- PHẦN THÔNG TIN SẢN PHẨM ---------------------- */
+.right .title-product-see {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.price {
+    font-size: 22px;
+    color: #d70018;
+    font-weight: bold;
+}
+
+.stock {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #000;
+}
+
+#quickBuyStock {
+    font-weight: bold;
+}
+
+.right hr {
+    border: 1px solid #f0f0f0;
+    margin: 15px 0;
+}
+
+#quickBuyHighlight {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+}
+
+/* ---------------------- CHỌN SỐ LƯỢNG ---------------------- */
+.select-soluong {
+    width: 80px;
+    margin-top: 5px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ---------------------- BUTTON ---------------------- */
+.button-buy .buy-mua {
+    margin-top: 15px;
+}
+
+.dk-mua {
+    display: inline-block;
+    background: #d70018;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.dk-mua i {
+    margin-right: 5px;
+}
+
+.add-to-cart {
+    background: #000;
+}
+
+/* ---------------------- ĐỊA CHỈ ---------------------- */
+.diachi h6 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.diachi ul {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.cam-ket {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px 0;
+}
+/* Hàng chứa 2 nút */
+.product-action-row {
+    display: flex;
+    gap: 20px; /* khoảng cách giữa 2 nút */
+    margin-top: 20px;
+}
+
+/* Mỗi nút chiếm 50% */
+.product-action-left,
+.product-action-right {
+    flex: 1;
+}
+
+/* Style nút */
+.btn-add-cart,
+.btn-register-buy {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-add-cart { background: #000; }
+.btn-register-buy { background: #d70018; }
+
+.btn-add-cart i,
+.btn-register-buy i {
+    margin-right: 5px;
+}
+
+/* Responsive: mobile xuống 2 hàng */
+@media (max-width: 768px) {
+    .product-action-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width: 768px) {
+    .title-product-see { font-size: 18px; }
+    .price { font-size: 20px; }
+    .dk-mua { font-size: 14px; }
+}
